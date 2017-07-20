@@ -1,0 +1,160 @@
+body {
+    margin: auto;
+    text-align: center;
+  
+}
+h1 {
+    border: 2px solid Black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: MidnightBlue;
+    width: 75%;
+}
+.info {
+    border: 2px solid Black;
+    text-align: center;
+    margin-bottom: 25px;
+    margin: auto;
+    padding: 40px;
+    width: 350px;
+}
+.calc-form {
+    display: inline-block;
+}
+label {
+    float: left;
+}
+input {
+    float: right;
+    margin-left: 10px;
+}
+label[for="info"] {
+    line-height: 21px;
+}
+label[for="personal"] {
+    line-height: 22px;
+    clear: left;
+}
+.calculate-space {
+    margin: 18px;    
+}
+div.box {
+    position: relative;
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0% {background-color: aqua; left: 0px; top: 0px;}
+    25% {background-color: chartreuse; left: 50px; top: 0px;}
+    50% {background-color: deeppink; left: 50px; top: 50px;}
+    75% {background-color: forestgreen; left: 0px; top: 50px;}
+    100% {background-color: cadetblue; left: 0px; top: 0px;}
+}
+div.text-box {
+    background-color: crimson;
+    margin: auto;
+    border: 3px solid red;
+    width: 200px;
+    height: auto;
+    opacity: .5;
+    position: relative;
+    bottom: 250px;
+}
+div.text-box:hover {
+    opacity: 1;
+    background-color: cornflowerblue;
+}
+input[type="radio"] {
+    position: relative; 
+}
+div.options {
+    position: relative;
+    bottom: 600px;
+    left: 450px;
+    border: 3px solid green;
+    margin: auto;
+    width: 350px;
+    height: 500px;
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.person-form {
+    display: inline-block;
+}
+#instructions {
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+}
+#checkboxes {
+    margin: auto;
+    margin-top: 10px;
+    padding: 5%;
+    
+}
+.age {
+    display: inline-block;
+    position: relative;
+    float: left;
+    bottom: 40px;
+    margin-left: 87px;
+}
+.gender{
+    display: inline-block;
+    position: relative;
+    margin-left: 200px;
+    right: 150px;
+    bottom: 45px;
+}
+input[type="radio"] {
+    float: right;
+}
+label[for="age"] {
+    display: inline-block;
+    float: left;
+    right: 40px;
+}
+input[type="checkbox"] {
+    float: left;
+}
+input#phoneNumber {
+    margin: auto;
+    margin-left: 8px;
+    margin-top: 3px;
+}
+label[for="phoneNumber"]{
+    clear: left;
+}
+#gender {
+    float: left;
+    clear: left;
+}
+#age {
+    position: relative;
+    float: left;
+    clear: left;
+    top: 15px;
+}
+#other-info {
+    height: 150px;
+}
+fieldset {
+    margin-top: 10px;
+}
+fieldset#name-box {
+    height: 100px;
+}
+.calculate-info {
+    position: static;
+    float: left;
+    margin-left: 140px;
+    margin-top: 10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' href='Calculator.css'>
+    <script src="Calculatorjavascript.js"></script>
+</head>
+<body>
+    <h1>Mortgage Calculator</h1>
+    <div class='info'>
+        <p id="instructions">Please enter your information so we can calculate your total price:</p>
+        <form name="information" class="calc-form">
+          <label for="info">Price of property:</label> <input type=number max="500" id="priceOfHouse"><br>
+          <label for="info">Years on mortgage:</label><input type="text" id="years"><br>
+          <label for="info">Interest Rate:</label><input type="text" id="interest"><br>
+          
+          <label for="info">Total Price:</label> <input type="text" id="TotalPrice">
+
+        </form>
+        <input type=button class="calculate-space" value="Calculate" onClick=getTotal();>
+    </div>
+
+    <div class='box'></div>
+    
+    <div class='text-box'>
+        <p>This is a text animation of some sort</p>
+    </div>
+    
+    <div class='options'>
+        <p id="checkboxes">Please fill out this form:</p>
+        <form name="moreInfo" class="person-form">
+            <fieldset id="name-box">
+                <legend>Personal Information</legend>
+                    <label for="personal">Name:</label><input type="text" id="name"><br>
+                    <label for="personal">Email:</label><input type="text" id="email"><br>
+                    <label for="personal">Phone number:</label><input type="number" id="number"><br>
+            </fieldset>
+            <fieldset id="contact-info">
+                <caption id="intruction">How would you like to be contacted?</caption><br>
+                    <label for="emailAddress">Email</label><input type="checkbox" id="emailAddress" value="emailAddress"><br>
+                    <label for="phoneNumber">Phone</label><input type="checkbox" id="phoneNumber" value="phoneNumber"><br>
+            </fieldset>
+            <fieldset id="other-info">
+                <legend>Other Information</legend>
+                    <p id="gender">Gender:</p>
+                    <div class="gender">
+                        <label for="gender">Male</label><input type="radio" name="gender" value="Male"><br>
+                        <label for="gender">Female</label><input type="radio" name="gender" value="Female"><br>
+                        <label for="gender">Other</label><input type="radio" name="gender" value="Other"><br>
+                    </div>
+                    <p id="age">Age:</p>
+                    <div class="age">
+                        <label for="age">18-25</label><input type="radio" name="age" value="18-21"><br>
+                        <label for="age">25-55</label><input type="radio" name="age" value="25-55"><br>
+                        <label for="age">55+</label><input type="radio" name="age" value="55+"><br>
+                    </div>
+            </fieldset>
+            <input type=submit class="calculate-info" value="Submit">
+        </form>
+    </div>
+    
+
+</body>
+</html>
